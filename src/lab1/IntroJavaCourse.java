@@ -21,6 +21,7 @@ public class IntroJavaCourse extends CourseOffering{
         //this.courseNumber = courseNumber;
     }
     
+    @Override
     public String getCourseName() {
         return courseName;
     }
@@ -35,6 +36,7 @@ public class IntroJavaCourse extends CourseOffering{
         this.courseName = courseName;
     }
     
+    @Override
     public String getCourseNumber() {
         return courseNumber;
     }
@@ -44,7 +46,7 @@ public class IntroJavaCourse extends CourseOffering{
         this.courseNumber = courseNumber;
     }
     
-    
+    @Override
     public double getCredits() {
         return credits;
     }
@@ -56,7 +58,7 @@ public class IntroJavaCourse extends CourseOffering{
                     "Error: credits must be in the range 0.5 to 4.0");
             System.exit(0);
         }
-        this.setCredits(credits);
+        this.credits = credits;
     }
     
     public String getPrerequisites() {

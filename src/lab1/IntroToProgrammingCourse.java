@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
  * Describe responsibilities here. NOTE: this class has NO PREREQUISITES! Do not
  * change this fact.
  *
- * @author your name goes here
+ * @author lee heberer
  * @version 1.00
  */
 public class IntroToProgrammingCourse extends CourseOffering{
@@ -22,6 +22,7 @@ public class IntroToProgrammingCourse extends CourseOffering{
     }
 
 
+    @Override
     public String getCourseName() {
         return courseName;
     }
@@ -36,6 +37,7 @@ public class IntroToProgrammingCourse extends CourseOffering{
         this.courseName = courseName;
     }
     
+    @Override
     public String getCourseNumber() {
         return courseNumber;
     }
@@ -50,6 +52,7 @@ public class IntroToProgrammingCourse extends CourseOffering{
         this.courseNumber = courseNumber;
     }
     
+    @Override
     public double getCredits() {
         return credits;
     }

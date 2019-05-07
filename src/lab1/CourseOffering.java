@@ -16,8 +16,12 @@ public abstract class CourseOffering {
     }
     
     abstract void setCourseName(String cName);
+    abstract String getCourseName();
     
     abstract void setCourseNumber(String cNumber);
+    abstract String getCourseNumber();
     
     abstract void setCredits(double credits);
+    abstract double getCredits();
+    
 }

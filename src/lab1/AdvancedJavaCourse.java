@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 /**
  * Describe responsibilities here.
  *
- * @author your name goes here
+ * @author lee heberer
  * @version 1.00
  */
 public class AdvancedJavaCourse extends CourseOffering {
@@ -27,6 +27,7 @@ public class AdvancedJavaCourse extends CourseOffering {
         this.courseName = courseName;
     }
 
+    @Override
     public String getCourseNumber() {
         return courseNumber;
     }
@@ -35,7 +36,7 @@ public class AdvancedJavaCourse extends CourseOffering {
     void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
     }
-    
+    @Override
     public String getCourseName() {
         return courseName;
     }
@@ -47,7 +48,12 @@ public class AdvancedJavaCourse extends CourseOffering {
                     "Error: credits must be in the range 0.5 to 4.0");
             System.exit(0);
         }
-        this.setCredits(credits);
+        this.credits = credits;
+    }
+    
+    @Override
+    public double getCredits(){
+        return credits;
     }
     
     public String getPrerequisites() {
